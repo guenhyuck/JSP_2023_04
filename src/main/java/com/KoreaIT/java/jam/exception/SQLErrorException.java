@@ -1,3 +1,4 @@
+
 package com.KoreaIT.java.jam.exception;
 
 public class SQLErrorException extends RuntimeException {

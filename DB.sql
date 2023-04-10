@@ -1,14 +1,9 @@
-
- 
-
 # DB 생성
 DROP DATABASE IF EXISTS `JSPAM`;
 CREATE DATABASE `JSPAM`;
 USE `JSPAM`;
 
 # article 테이블 생성
-DROP TABLE article;
-
 CREATE TABLE article(
     id INT(10) UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     regDate DATETIME NOT NULL,
@@ -36,6 +31,3 @@ INSERT INTO article
 SET regDate = NOW(),
 title = '제목 4',
 `body` = '내용 4';
-
-SELECT *
-FROM article;
